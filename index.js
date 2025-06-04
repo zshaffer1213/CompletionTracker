@@ -17,7 +17,7 @@ function render(d) {
             `<div>
                 <input type='checkbox' id='check-complete-${store.number}' data-store-number='${store.number}' checked>
                 <label for='check-complete-${store.number}'>${store.location} | ${store.number}</label>
-                <a href="tel:${store.number}"><button>Call Store</button></a>
+                <a href="tel:${store.phone}"><button>Call Store</button></a>
             </div>
             `
         }
@@ -27,7 +27,7 @@ function render(d) {
             `<div>
                 <input type='checkbox' id='check-complete-${store.number}' data-store-number='${store.number}'>
                 <label for='check-complete-${store.number}'>${store.location} | ${store.number}</label>
-                <a href="tel:${store.number}"><button>Call Store</button></a>
+                <a href="tel:${store.phone}"><button>Call Store</button></a>
             </div>
             `
         }
