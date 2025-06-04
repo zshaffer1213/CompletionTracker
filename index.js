@@ -1,9 +1,9 @@
-import {storeData} from './data.js'
+import {storeData as initialData} from './data.js'
 
-let data = JSON.parse(localStorage.getItem('storeData')) || storeData
+let data = JSON.parse(localStorage.getItem('storeData')) || initialData
 
 function saveToLocal() {
-    localStorage.setItem('storeData', JSON.stringify(storeData))
+    localStorage.setItem('storeData', JSON.stringify(data))
 }
 
 function render(d) {
@@ -38,9 +38,10 @@ function render(d) {
 
 document.addEventListener('click', (e) => {
     if (e.target.dataset.storeNumber) {
-        let targetStore = storeData.find(store => store.number === e.target.dataset.storeNumber)
+        let targetStore = data.find(store => store.number === e.target.dataset.storeNumber)
         targetStore.isComplete = !targetStore.isComplete
         saveToLocal()
+        render(data)
     }
 })
 
