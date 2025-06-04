@@ -17,7 +17,7 @@ function render(d) {
             `<div>
                 <input type='checkbox' id='check-complete-${store.number}' data-store-number='${store.number}' checked>
                 <label for='check-complete-${store.number}'>${store.location} | ${store.number}</label>
-                <button href="tel:${store.phone}">Call Store</button>
+                <a href="tel:${store.number}"><button>Call Store</button></a>
             </div>
             `
         }
@@ -27,7 +27,7 @@ function render(d) {
             `<div>
                 <input type='checkbox' id='check-complete-${store.number}' data-store-number='${store.number}'>
                 <label for='check-complete-${store.number}'>${store.location} | ${store.number}</label>
-                <button href="tel:${store.phone}>Call Store</button>
+                <a href="tel:${store.number}"><button>Call Store</button></a>
             </div>
             `
         }
@@ -45,5 +45,5 @@ document.addEventListener('click', (e) => {
 })
 
 
-    
+  
 render(data)
