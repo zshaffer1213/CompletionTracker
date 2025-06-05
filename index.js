@@ -16,7 +16,8 @@ function render(d) {
             `<div class="store">
                 <input type='checkbox' id='check-complete-${store.number}' data-store-number='${store.number}' ${(store.isComplete) ? "checked" : " "}>
                 <label for='check-complete-${store.number}'>${store.location} | ${store.number}</label>
-                <a href="tel:${store.phone}"><button class="btn">Call Store</button></a>
+                <a href="sms:${store.text}"><button class="btn"><i class="fa-solid fa-comment"></i> SM</button></a>
+                <a href="tel:${store.phone}"><button class="btn"><i class="fa-solid fa-phone"></i> Store</button></a>
             </div>
             `
 
