@@ -101,5 +101,7 @@ input[type="checkbox"] {
     position: absolute;
     top: 50px;
     left: 30px;
+    text-align: center;
+    vertical-align: middle;
 }
 
