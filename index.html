@@ -8,7 +8,15 @@
 </head>
 <body>
     <h1>Completion Tracker</h1>
-    <div id="store-list"></div>
+    <div class="progress-div" id="progress-div">
+        <label for="progress-bar">Completion:</label>
+        <progress min="0" max="100" value="20" id="progress-bar"></progress>
+        <span id="progress-text">0%</span>
+    </div>
+    <div class="flex-container">
+        <button id="reset" class="btn">↻</button>
+        <div id="store-list"></div>
+    </div>
     <script type="module" src="index.js"></script>
 </body>
 </html>

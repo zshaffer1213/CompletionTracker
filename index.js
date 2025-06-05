@@ -12,25 +12,14 @@ function render(d) {
         
         let storeListHtml = ''
         
-        if (store.isComplete) {
             storeListHtml += 
-            `<div>
-                <input type='checkbox' id='check-complete-${store.number}' data-store-number='${store.number}' checked>
+            `<div class="store">
+                <input type='checkbox' id='check-complete-${store.number}' data-store-number='${store.number}' ${(store.isComplete) ? "checked" : " "}>
                 <label for='check-complete-${store.number}'>${store.location} | ${store.number}</label>
-                <a href="tel:${store.phone}"><button>Call Store</button></a>
+                <a href="tel:${store.phone}"><button class="btn">Call Store</button></a>
             </div>
             `
-        }
 
-        else {
-            storeListHtml +=
-            `<div>
-                <input type='checkbox' id='check-complete-${store.number}' data-store-number='${store.number}'>
-                <label for='check-complete-${store.number}'>${store.location} | ${store.number}</label>
-                <a href="tel:${store.phone}"><button>Call Store</button></a>
-            </div>
-            `
-        }
         return storeListHtml
         }).join('')
         
@@ -42,6 +31,15 @@ document.addEventListener('click', (e) => {
         targetStore.isComplete = !targetStore.isComplete
         saveToLocal()
         render(data)
+    }
+    else if (e.target.id === "reset") {
+
+        if (confirm("Are you sure you want to reset all progress?")) {
+            data = initialData
+            saveToLocal()
+            location.reload()
+        }
+
     }
 })
 
