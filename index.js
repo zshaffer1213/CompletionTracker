@@ -1,4 +1,4 @@
-import {storeData as initialData} from './data.js'
+import {storeData as initialData, storeData} from './data.js'
 
 let data = JSON.parse(localStorage.getItem('storeData')) || initialData
 
@@ -22,6 +22,18 @@ function render(d) {
 
         return storeListHtml
         }).join('')
+        
+
+        // progress bar logic
+        const total = data.length
+        const complete = data.filter(store => store.isComplete).length
+        const percent = Math.round((complete / total) * 100);
+
+        const progressBar =  document.getElementById('progress-bar')
+        const progressText = document.getElementById('progress-text')
+
+        progressBar.value = percent
+        progressText.textContent = `${percent}%`
         
 }
 
