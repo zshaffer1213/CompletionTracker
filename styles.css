@@ -98,13 +98,10 @@ input[type="checkbox"] {
 }
 
 #reset {
-    padding: 5px 8px;
     font-size: 1.25em;
     position: absolute;
     top: 50px;
     left: 30px;
-    text-align: center;
-    vertical-align: middle;
     height: fit-content;
     width: fit-content;
 }
