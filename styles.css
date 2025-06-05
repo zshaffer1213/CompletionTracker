@@ -96,7 +96,7 @@ input[type="checkbox"] {
 }
 
 #reset {
-    padding: 5px;
+    padding: 5px 8px;
     font-size: 1.25em;
     position: absolute;
     top: 50px;
