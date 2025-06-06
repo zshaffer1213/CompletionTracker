@@ -5,6 +5,7 @@
 
 
 body {
+    font-family: "Roboto", sans-serif;
     text-align: center;
     background-color: grey;
     color: #fdf000ff;
@@ -87,6 +88,7 @@ input[type="checkbox"] {
 }
 
 .btn {
+    font-family: "Roboto", sans-serif;
     height: 50px;
     width: 55px;
     padding: 5px 10px;
