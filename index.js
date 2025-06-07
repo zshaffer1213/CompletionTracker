@@ -62,6 +62,8 @@ render(data)
 
 // pwa service worker and install
 
+let deferredPrompt
+
 window.addEventListener('beforeinstallprompt', e => {
     // prevent defult prompt
     e.preventDefault()
