@@ -13,8 +13,11 @@
     "src":"assets/favicon-32x32.png",
     "sizes":"32x32","type":"image/png"}
 ],
-    "theme_color":"#333",
-    "background_color":"#333",
+    "theme_color":"#252525",
+    "background_color":"#252525",
     "display":"standalone",
-    "orientation": "portrait"
+    "display_override": ["fullscreen", "minimal-ui"],
+    "orientation": "portrait",
+    "start_url": ".",
+    "id": "/"
 }
