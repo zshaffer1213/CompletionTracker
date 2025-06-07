@@ -71,7 +71,7 @@ window.addEventListener('beforeinstallprompt', e => {
     deferredPrompt = e;
 
     const installButton = document.getElementById('install-btn')
-    installButton.style.display = 'block'
+    installButton.style.display = 'inline-block'
 
     installButton.addEventListener('click', () => {
         deferredPrompt.prompt()
