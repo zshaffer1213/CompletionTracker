@@ -108,3 +108,8 @@ input[type="checkbox"] {
     width: fit-content;
 }
 
+#install-btn {
+    margin: 20px auto 10px 0;
+    align-self: flex-start;
+}
+
