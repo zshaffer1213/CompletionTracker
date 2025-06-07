@@ -109,7 +109,10 @@ input[type="checkbox"] {
 }
 
 #install-btn {
+    display: none;
     margin: 20px auto 10px 0;
     align-self: flex-start;
+    width: fit-content;
+    text-align: center;
 }
 
