@@ -44,9 +44,9 @@ h1 {
     align-items: center;
 }
 
-.store label, label {
+.store label, label, #progress-text {
     font-size: 1.25em;
-    text-shadow: 0 0 1px #333;
+    text-shadow: 0 0 2px #333;
     vertical-align: middle;
 }
 
@@ -70,7 +70,7 @@ input[type="checkbox"] {
 #progress-bar {
     height: 20px;
     width: 80%;
-    background-color: #252525;
+    background-color: #333;
     appearance: none;
     border-radius: 20px;
 
@@ -85,6 +85,7 @@ input[type="checkbox"] {
     background-color: #fdf000ff;
     border-radius: 20px;
     transition: width .5s;
+    box-shadow: 0 0 2px black;
 
 }
 
@@ -97,7 +98,7 @@ input[type="checkbox"] {
     font-weight: bold;
     color: #fdf000ff;
     background-color: #333;
-    border-radius: 50px;
+    border-radius: 10px;
 }
 
 #reset {
