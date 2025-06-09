@@ -29,6 +29,7 @@ h1 {
 
 #store-list {
     gap: 25px;
+    padding-top: 70px;
 }
 
 
@@ -68,7 +69,7 @@ input[type="checkbox"] {
 }
 
 #progress-bar {
-    height: 20px;
+    height: 25px;
     width: 80%;
     background-color: #333;
     appearance: none;
@@ -84,7 +85,7 @@ input[type="checkbox"] {
 #progress-bar::-webkit-progress-value {
     background-color: #fdf000ff;
     border-radius: 20px;
-    transition: width .5s;
+    transition: width .65s;
     box-shadow: 0 0 2px black;
 
 }
@@ -102,13 +103,14 @@ input[type="checkbox"] {
 }
 
 #reset {
-    font-size: 1.25em;
+    font-size: 1.125em;
     position: absolute;
-    top: 50px;
-    left: 30px;
+    top: 70px;
+    left: 20px;
     height: fit-content;
     width: fit-content;
 }
+
 
 #install-btn {
     display: none;
@@ -117,3 +119,19 @@ input[type="checkbox"] {
     text-align: center;
 }
 
+
+.fa-repeat {
+    font-weight: 900;
+}
+
+
+div#progress-div {
+    position:fixed;
+    width: 100dvw;
+    margin: 0 auto;
+    background-color: gray;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 10px 0 15px;
+}

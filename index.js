@@ -34,7 +34,7 @@ function render(d) {
         const progressText = document.getElementById('progress-text')
 
         progressBar.value = percent
-        progressText.textContent = `${percent}%`
+        progressText.textContent = `${percent}%` 
         
 }
 
@@ -45,15 +45,14 @@ document.addEventListener('click', (e) => {
         saveToLocal()
         render(data)
     }
-    else if (e.target.id === "reset") {
+})
 
-        if (confirm("Are you sure you want to reset all progress?")) {
+document.getElementById('reset').addEventListener('click', () => {
+    if (confirm("Are you sure you want to reset all progress?")) {
             data = initialData
             saveToLocal()
             location.reload()
         }
-
-    }
 })
 
 
