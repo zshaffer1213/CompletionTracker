@@ -59,7 +59,7 @@ export const storeData = [
         location: "Lansing",
         number: "16838",
         phone: "607-366-0178",
-        text: "607-345-8404",
+        text: "607-280-7881",
         isComplete: false
     },
     {
