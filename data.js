@@ -87,7 +87,7 @@ export const storeData = [
         location: "Union Springs",
         number: "21994",
         phone: "315-573-8947",
-        text: "315-751-4983",
+        text: "607-391-5859",
         isComplete: false
     },
     {
